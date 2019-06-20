@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayoutActualizarMuestra"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/background_light"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textViewActualizarMuestraIdIntervencion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="84dp"
+            android:layout_marginLeft="84dp"
+            android:layout_marginTop="8dp"
+            android:text="Id Pozo/Recoleccion/Perfil:"
+            app:layout_constraintStart_toEndOf="@+id/textViewActualizarMuestraId"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewActualizarMuestraId"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Id Muestra:"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <Button
+            android:id="@+id/buttonActualizarMuestraCancelar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="368dp"
+            android:layout_marginLeft="368dp"
+            android:layout_marginTop="288dp"
+            android:text="Cancelar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />"
+
+        <Button
+            android:id="@+id/buttonActualizarMuestra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="288dp"
+            android:text="Actualizar"
+            app:layout_constraintStart_toEndOf="@+id/buttonActualizarMuestraCancelar"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewActualizarMuestraTipoMuestra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="72dp"
+            android:text="Tipo Muestra:"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewActualizarMuestraTipoMaterial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="36dp"
+            android:text="Tipo Material:"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewActualizarMuestraTipoMuestra" />
+
+        <TextView
+            android:id="@+id/textViewActualizarArgumentacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="28dp"
+            android:text="Argumentación:"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewActualizarMuestraTipoMaterial" />
+
+        <TextView
+            android:id="@+id/textViewActualizarMuestraDestino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="52dp"
+            android:text="Destino:"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewActualizarArgumentacion" />
+
+        <TextView
+            android:id="@+id/textViewActualizarMuestraContexto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="48dp"
+            android:text="Contexto"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewActualizarMuestraDestino" />
+
+
+        <Spinner
+            android:id="@+id/spinnerActualizarMuestraTipoMuestra"
+            android:layout_width="322dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="72dp"
+            app:layout_constraintStart_toEndOf="@+id/textViewActualizarMuestraTipoMuestra"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Spinner
+            android:id="@+id/spinnerActualizarMuestraTipoMaterial"
+            android:layout_width="325dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintStart_toEndOf="@+id/textViewActualizarMuestraTipoMaterial"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerActualizarMuestraTipoMuestra" />
+
+        <EditText
+            android:id="@+id/editTextActualizarMuestraArgumentacion"
+            android:layout_width="345dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="20dp"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            app:layout_constraintStart_toEndOf="@+id/textViewActualizarArgumentacion"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerActualizarMuestraTipoMaterial" />
+
+        <EditText
+            android:id="@+id/editTextActualizarMuestraDestino"
+            android:layout_width="351dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="24dp"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            app:layout_constraintStart_toEndOf="@+id/textViewActualizarMuestraDestino"
+            app:layout_constraintTop_toBottomOf="@+id/editTextActualizarMuestraArgumentacion" />
+
+        <EditText
+            android:id="@+id/editTextActualizarMuestraContexto"
+            android:layout_width="351dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="56dp"
+            android:layout_marginLeft="56dp"
+            android:layout_marginTop="20dp"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            app:layout_constraintStart_toEndOf="@+id/textViewActualizarMuestraContexto"
+            app:layout_constraintTop_toBottomOf="@+id/editTextActualizarMuestraDestino" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+
+
+    </ScrollView >

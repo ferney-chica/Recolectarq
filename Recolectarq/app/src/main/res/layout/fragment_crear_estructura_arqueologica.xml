@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayoutCrearEstructura"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/textViewCrearEstructuraTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="CrearEstructura"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonCrearEstructura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="112dp"
+        android:layout_marginLeft="112dp"
+        android:layout_marginTop="72dp"
+        android:text="Crear Estructura"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCrearEstructuraEntorno" />
+
+    <TextView
+        android:id="@+id/textViewCrearEstructuraTipoEstructura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Tipo Estructura:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCrearEstructuraTitulo" />
+
+    <TextView
+        android:id="@+id/textViewCrearEstructuraTopologiaEstructura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="28dp"
+        android:text="Topología Estructura:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCrearEstructuraTipoEstructura" />
+
+    <TextView
+        android:id="@+id/textViewCrearEstructuraDescripcion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="32dp"
+        android:text="Descripción:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCrearEstructuraTopologiaEstructura" />
+
+    <TextView
+        android:id="@+id/textViewCrearEstructuraPuntoConexo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="44dp"
+        android:text="Punto Conexo:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCrearEstructuraDescripcion" />
+
+    <TextView
+        android:id="@+id/textViewCrearEstructuraUtmx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="44dp"
+        android:text="UTMx:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCrearEstructuraPuntoConexo" />
+
+    <TextView
+        android:id="@+id/textViewCrearEstructuraUtmy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="56dp"
+        android:text="UTMy:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCrearEstructuraUtmx" />
+
+    <TextView
+        android:id="@+id/textViewCrearEstructuraLatitud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="48dp"
+        android:text="Latitud:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCrearEstructuraUtmy" />
+
+    <TextView
+        android:id="@+id/textViewCrearEstructuraLongitud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="56dp"
+        android:text="Longitud:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCrearEstructuraLatitud" />
+
+    <TextView
+        android:id="@+id/textViewCrearEstructuraDimension"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="48dp"
+        android:text="Dimensión:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCrearEstructuraLongitud" />
+
+    <TextView
+        android:id="@+id/textViewCrearEstructuraEntorno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="44dp"
+        android:text="Entorno:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCrearEstructuraDimension" />
+
+    <Spinner
+        android:id="@+id/spinnerCrearEstructuraTipoEstructura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toEndOf="@+id/textViewCrearEstructuraTipoEstructura"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCrearEstructuraTitulo" />
+
+    <Spinner
+        android:id="@+id/spinnerCrearEstructuraTopologiaEstructura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toEndOf="@+id/textViewCrearEstructuraTopologiaEstructura"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerCrearEstructuraTipoEstructura" />
+
+    <EditText
+        android:id="@+id/editTextCrearEstructuraDescripcion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        app:layout_constraintStart_toEndOf="@+id/textViewCrearEstructuraDescripcion"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerCrearEstructuraTopologiaEstructura" />
+
+    <EditText
+        android:id="@+id/editTextCrearEstructuraPuntoConexo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        app:layout_constraintStart_toEndOf="@+id/textViewCrearEstructuraPuntoConexo"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCrearEstructuraDescripcion" />
+
+    <EditText
+        android:id="@+id/editTextCrearEstructuraUtmx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toEndOf="@+id/textViewCrearEstructuraUtmx"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCrearEstructuraPuntoConexo" />
+
+    <EditText
+        android:id="@+id/editTextCrearEstructuraUtmy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toEndOf="@+id/textViewCrearEstructuraUtmy"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCrearEstructuraUtmx" />
+
+    <EditText
+        android:id="@+id/editTextCrearEstructuraLatitud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintStart_toEndOf="@+id/textViewCrearEstructuraLatitud"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCrearEstructuraUtmy" />
+
+    <EditText
+        android:id="@+id/editTextCrearEstructuraLongitud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintStart_toEndOf="@+id/textViewCrearEstructuraLongitud"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCrearEstructuraLatitud" />
+
+    <EditText
+        android:id="@+id/editTextCrearEstructuraDimension"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        app:layout_constraintStart_toEndOf="@+id/textViewCrearEstructuraDimension"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCrearEstructuraLongitud" />
+
+    <EditText
+        android:id="@+id/editTextCrearEstructuraEntorno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        app:layout_constraintStart_toEndOf="@+id/textViewCrearEstructuraEntorno"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCrearEstructuraDimension" />
+
+
+</android.support.constraint.ConstraintLayout>
+
+    </ScrollView >

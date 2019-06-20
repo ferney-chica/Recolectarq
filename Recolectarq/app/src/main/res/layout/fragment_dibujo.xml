@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayoutFragmentDibujo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imageButtonDibujoNuevo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/nuevo_dibujo" />
+
+        <ImageButton
+            android:id="@+id/imageButtonDibujoTamano"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/tamano_lapiz"
+
+            />
+
+        <ImageButton
+            android:id="@+id/imageButtonDibujoBorrador"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/borrador" />
+
+        <ImageButton
+            android:id="@+id/imageButtonDibujoGuardar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/guardar" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="12"
+        android:orientation="horizontal">
+
+        <view
+            class="com.recolectarq.campo.recolectarq.Lienzo"
+            android:id="@+id/lienzoDibujo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fff" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imageButtonColorNegro"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:tag="#000000"
+            android:background="#000000"/>
+
+        <ImageButton
+            android:id="@+id/imageButtonColorGris"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#898989"
+            android:tag="#898989" />
+
+        <ImageButton
+            android:id="@+id/imageButtonColorBlanco"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:tag="#FFFFFF"
+            android:background="#FFFFFF" />
+
+        <ImageButton
+            android:id="@+id/imageButtonColorAmarillo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FFED00"
+            android:tag="#FFED00" />
+
+        <ImageButton
+            android:id="@+id/imageButtonColorAzul"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:tag="#0B5FA3"
+            android:background="#0B5FA3" />
+
+        <ImageButton
+            android:id="@+id/imageButtonColorRojo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:tag="#C92223"
+            android:background="#C92223" />
+        <ImageButton
+            android:id="@+id/imageButtonColorVerde"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:tag="#009846"
+            android:background="#009846" />
+
+    </LinearLayout>
+</LinearLayout>
+
+
+

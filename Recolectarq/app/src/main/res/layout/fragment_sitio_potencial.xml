@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+<android.support.constraint.ConstraintLayout
+    android:id="@+id/constraintLayoutSitioPotencial"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <EditText
+        android:id="@+id/editTextSitioPotencialYacimientosConexos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:gravity="top"
+        android:inputType="textImeMultiLine"
+        app:layout_constraintStart_toEndOf="@+id/textViewSitioPotencialYacimientosConexo"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSitioPotencialElementoNoArqueologico" />
+
+    <EditText
+        android:id="@+id/editTextSitioPotencialElementoNoArqueologico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:gravity="top"
+        android:inputType="textImeMultiLine"
+        app:layout_constraintStart_toEndOf="@+id/textViewSitioPotencialElementoNoArqueologico"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSitioPotencialCondicionHallazgo" />
+
+    <EditText
+        android:id="@+id/editTextSitioPotencialCondicionHallazgo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:gravity="top"
+        android:inputType="textImeMultiLine"
+        app:layout_constraintStart_toEndOf="@+id/textViewSitioPotencialCondicionHallazgo"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSitioPotencialTipoTrabajo" />
+
+    <EditText
+        android:id="@+id/editTextSitioPotencialTipoTrabajo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:gravity="top"
+        android:inputType="textImeMultiLine"
+        app:layout_constraintStart_toEndOf="@+id/textViewSitioPotencialTipoTrabajo"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSitioPotencialOtroMaterial" />
+
+    <TextView
+        android:id="@+id/textViewSitioPotencialTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="4dp"
+        android:text="SITIO POTENCIAL"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonSitioPotencialGuardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="228dp"
+        android:layout_marginLeft="228dp"
+        android:layout_marginTop="32dp"
+        android:text="Guardar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSitioPotencialYacimientosConexos" />
+
+    <TextView
+        android:id="@+id/textViewSitioPotencialConjuntoMaterial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Conjunto Material:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSitioPotencialTitulo" />
+
+    <TextView
+        android:id="@+id/textViewSitioPotencialDispercionMaterial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="48dp"
+        android:text="Disperción Material:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSitioPotencialConjuntoMaterial" />
+
+    <TextView
+        android:id="@+id/textViewSitioPotencialOtroMaterial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="52dp"
+        android:text="Otro Material:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSitioPotencialDispercionMaterial" />
+
+    <TextView
+        android:id="@+id/textViewSitioPotencialTipoTrabajo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="48dp"
+        android:text="Tipo trabajo:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSitioPotencialOtroMaterial" />
+
+    <TextView
+        android:id="@+id/textViewSitioPotencialCondicionHallazgo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="52dp"
+        android:text="Condición hallazgo:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSitioPotencialTipoTrabajo" />
+
+    <TextView
+        android:id="@+id/textViewSitioPotencialElementoNoArqueologico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="56dp"
+        android:text="Elemento no arqueológico:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSitioPotencialCondicionHallazgo" />
+
+    <TextView
+        android:id="@+id/textViewSitioPotencialYacimientosConexo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="52dp"
+        android:text="Yacimientos conexos:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSitioPotencialElementoNoArqueologico" />
+
+    <EditText
+        android:id="@+id/editTextSitioPotencialConjuntoMaterial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:gravity="top"
+        android:inputType="textImeMultiLine"
+        app:layout_constraintStart_toEndOf="@+id/textViewSitioPotencialConjuntoMaterial"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSitioPotencialTitulo" />
+
+    <EditText
+        android:id="@+id/editTextSitioPotencialDispercionMaterial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:gravity="top"
+        android:inputType="textImeMultiLine"
+        app:layout_constraintStart_toEndOf="@+id/textViewSitioPotencialDispercionMaterial"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSitioPotencialConjuntoMaterial" />
+
+    <EditText
+        android:id="@+id/editTextSitioPotencialOtroMaterial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:gravity="top"
+        android:inputType="textImeMultiLine"
+        app:layout_constraintStart_toEndOf="@+id/textViewSitioPotencialOtroMaterial"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSitioPotencialDispercionMaterial" />
+
+</android.support.constraint.ConstraintLayout>
+
+    </ScrollView>

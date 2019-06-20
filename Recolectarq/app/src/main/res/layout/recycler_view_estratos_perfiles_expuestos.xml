@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#E2E2E2"
+    tools:layout_editor_absoluteY="89dp">
+
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/imageViewEstratoPerfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/add_24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.491" />
+
+            <TextView
+                android:id="@+id/textViewEstratoPerfilIdEstrato"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="52dp"
+                android:layout_marginLeft="52dp"
+                android:layout_marginTop="8dp"
+                android:text="Id Estrato:"
+                android:textSize="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_conversion_absoluteHeight="27dp"
+                tools:layout_conversion_absoluteWidth="52dp" />
+
+            <TextView
+                android:id="@+id/textViewEstratoPerfilIdPerfil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="8dp"
+                android:text="Id Perfil:"
+                android:textSize="20dp"
+                app:layout_constraintStart_toEndOf="@+id/textViewEstratoPerfilIdEstrato"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_conversion_absoluteHeight="27dp"
+                tools:layout_conversion_absoluteWidth="52dp" />
+
+    <TextView
+        android:id="@+id/textViewEstratoPerfilColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="20dp"
+        android:text="Color:"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/imageViewEstratoPerfil"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEstratoPerfilTipoEstrato"
+        tools:layout_conversion_absoluteHeight="27dp"
+        tools:layout_conversion_absoluteWidth="52dp" />
+
+    <TextView
+        android:id="@+id/textViewEstratoPerfilTipoEstrato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="24dp"
+        android:text="Tipo Estrato:"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/imageViewEstratoPerfil"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEstratoPerfilIdEstrato"
+        tools:layout_conversion_absoluteHeight="27dp"
+        tools:layout_conversion_absoluteWidth="52dp" />
+
+    <TextView
+        android:id="@+id/textViewEstratoPerfilTextura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:layout_marginLeft="88dp"
+        android:layout_marginTop="20dp"
+        android:text="Textura:"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/textViewEstratoPerfilColor"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEstratoPerfilProfundidad"
+        tools:layout_conversion_absoluteHeight="27dp"
+        tools:layout_conversion_absoluteWidth="52dp" />
+
+            <TextView
+                android:id="@+id/textViewEstratoPerfilEstructura"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="64dp"
+                android:layout_marginLeft="64dp"
+                android:layout_marginTop="16dp"
+                android:text="Estructura:"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewEstratoPerfilColor"
+                tools:layout_conversion_absoluteHeight="27dp"
+                tools:layout_conversion_absoluteWidth="52dp" />
+
+            <TextView
+                android:id="@+id/textViewEstratoPerfilObservacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="16dp"
+                android:text="Observaciones:"
+                android:textSize="14sp"
+                app:layout_constraintStart_toEndOf="@+id/imageViewEstratoPerfil"
+                app:layout_constraintTop_toBottomOf="@+id/textViewEstratoPerfilEstructura"
+                tools:layout_conversion_absoluteHeight="27dp"
+                tools:layout_conversion_absoluteWidth="52dp" />
+
+    <TextView
+        android:id="@+id/textViewEstratoPerfilProfundidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="24dp"
+        android:text="Profundidad:"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/textViewEstratoPerfilTipoEstrato"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEstratoPerfilIdPerfil"
+        tools:layout_conversion_absoluteHeight="27dp"
+        tools:layout_conversion_absoluteWidth="52dp" />
+
+            <ImageButton
+                android:id="@+id/imageButtonVerEstratoPerfil"
+                android:layout_width="37dp"
+                android:layout_height="39dp"
+                android:layout_marginStart="412dp"
+                android:layout_marginLeft="412dp"
+                android:layout_marginTop="148dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@android:drawable/ic_menu_edit" />
+
+            <ImageButton
+                android:id="@+id/imageButtonMaterialesEstratoPerfil"
+                android:layout_width="37dp"
+                android:layout_height="39dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="148dp"
+                app:layout_constraintStart_toEndOf="@+id/imageButtonVerEstratoPerfil"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@android:drawable/ic_dialog_dialer" />
+
+    <ImageButton
+        android:id="@+id/imageButtonEliminarEstratoPerfil"
+        android:layout_width="37dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="148dp"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonEstratoPerfilImagenes"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_delete" />
+
+    <ImageButton
+        android:id="@+id/imageButtonEstratoPerfilImagenes"
+        android:layout_width="37dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="148dp"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonEstratoPerfilCodigoRotulo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_menu_gallery" />
+
+    <ImageButton
+        android:id="@+id/imageButtonEstratoPerfilCodigoRotulo"
+        android:layout_width="37dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="148dp"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonMaterialesEstratoPerfil"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="?attr/actionModeSelectAllDrawable" />
+
+    <TextView
+        android:id="@+id/textViewEstratoPerfilCodigoRotulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="12dp"
+        android:text="Código Rótulo:"
+        app:layout_constraintStart_toEndOf="@+id/textViewEstratoPerfilEstructura"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEstratoPerfilTextura" />
+    </android.support.constraint.ConstraintLayout>
+
+
+

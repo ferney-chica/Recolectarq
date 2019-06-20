@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayoutRecyclerMaterialesRecoleccion"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#E2E2E2"
+    tools:layout_editor_absoluteY="89dp">
+
+
+
+
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/imageViewMatRecol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/add_24dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.182" />
+
+                <TextView
+                    android:id="@+id/textViewMatRecolRecoleccionId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="156dp"
+                    android:layout_marginLeft="156dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Recolección Id:"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toEndOf="@+id/textViewMatRecolId"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:layout_conversion_absoluteHeight="27dp"
+                    tools:layout_conversion_absoluteWidth="52dp" />
+
+                <TextView
+                    android:id="@+id/textViewMatRecolId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Material Id:"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:layout_conversion_absoluteHeight="27dp"
+                    tools:layout_conversion_absoluteWidth="52dp" />
+
+                <TextView
+                    android:id="@+id/textViewMatRecolTipoMaterial"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="28dp"
+                    android:text="Tipo de Material:"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toEndOf="@+id/imageViewMatRecol"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewMatRecolId"
+                    tools:layout_conversion_absoluteHeight="27dp"
+                    tools:layout_conversion_absoluteWidth="52dp" />
+
+                <TextView
+                    android:id="@+id/textViewMatRecolNombreFlanco"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="12dp"
+                    android:text="Flanco Geográfico:"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toEndOf="@+id/imageViewMatRecol"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewMatRecolTipoMaterial"
+                    tools:layout_conversion_absoluteHeight="27dp"
+                    tools:layout_conversion_absoluteWidth="52dp" />
+
+                <TextView
+                    android:id="@+id/textViewMatRecolCodigoRotulo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Código Rótulo:"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toEndOf="@+id/imageViewMatRecol"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewMatRecolNombreFlanco"
+                    tools:layout_conversion_absoluteHeight="27dp"
+                    tools:layout_conversion_absoluteWidth="52dp" />
+
+                <TextView
+                    android:id="@+id/textViewMatRecolCantidad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="68dp"
+                    android:layout_marginLeft="68dp"
+                    android:layout_marginTop="12dp"
+                    android:text="Cantidad:"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toEndOf="@+id/textViewMatRecolTipoMaterial"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewMatRecolRecoleccionId"
+                    tools:layout_conversion_absoluteHeight="27dp"
+                    tools:layout_conversion_absoluteWidth="52dp" />
+
+                <TextView
+                    android:id="@+id/textViewMatElementoDiagnostico"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="48dp"
+                    android:layout_marginLeft="48dp"
+                    android:layout_marginTop="12dp"
+                    android:text="Elemento Diagnóstico:"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toEndOf="@+id/textViewMatRecolNombreFlanco"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewMatRecolCantidad"
+                    tools:layout_conversion_absoluteHeight="27dp"
+                    tools:layout_conversion_absoluteWidth="52dp" />
+
+        <ImageButton
+            android:id="@+id/imageButtonVerMatRecol"
+            android:layout_width="37dp"
+            android:layout_height="39dp"
+            android:layout_marginStart="288dp"
+            android:layout_marginLeft="288dp"
+            android:layout_marginTop="112dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@android:drawable/ic_menu_edit" />
+
+    <ImageButton
+        android:id="@+id/imageButtonEliminarMatRecol"
+        android:layout_width="37dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="112dp"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonMatRecolImagenes"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_delete" />
+
+    <ImageButton
+        android:id="@+id/imageButtonMatRecolImagenes"
+        android:layout_width="37dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="112dp"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonMatRecolCodigoRotulo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_menu_gallery" />
+
+    <ImageButton
+        android:id="@+id/imageButtonMatRecolCodigoRotulo"
+        android:layout_width="37dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="112dp"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonVerMatRecol"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="?attr/actionModeSelectAllDrawable" />
+
+
+</android.support.constraint.ConstraintLayout>
+
+</ScrollView>

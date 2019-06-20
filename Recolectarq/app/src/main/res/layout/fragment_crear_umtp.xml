@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayoutCrearUmtp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:layout_editor_absoluteY="81dp">
+
+    <Spinner
+        android:id="@+id/spinnerCrearUmtpGeoforma"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        android:focusableInTouchMode="true"
+        android:nextFocusDown="@id/editTextUbicacion"
+        android:prompt="@string/tipo_proyecto"
+        android:spinnerMode="dialog"
+        app:layout_constraintStart_toEndOf="@+id/textViewCrearUmtpGeoforma"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerCrearUmtpTipoRelieve" />
+
+    <TextView
+        android:id="@+id/textViewCrearUmtpGeoforma"
+        android:layout_width="66dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="28dp"
+        android:text="Geoforma:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCrearUmtpTipoRelieve" />
+
+    <EditText
+        android:id="@+id/editTextCrearUmtpZonaIncluyente"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="8dp"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        app:layout_constraintStart_toEndOf="@+id/textViewCrearUmtpZonasIncluyentes"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCrearUmtpAccesos" />
+
+    <TextView
+        android:id="@+id/textViewCrearUmtpZonasIncluyentes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="36dp"
+        android:text="Zonas incluyentes:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCrearUmtpAccesos" />
+
+    <TextView
+        android:id="@+id/textViewCrearUmtpAccesos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="32dp"
+        android:text="Accesos:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCrearUmtpDedicacionEntorno" />
+
+    <EditText
+        android:id="@+id/editTextCrearUmtpAccesos"
+        android:layout_width="82dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="28dp"
+        android:inputType="textMultiLine"
+        app:layout_constraintStart_toEndOf="@+id/textViewCrearUmtpAccesos"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerCrearUmtpDedicacionEntorno" />
+
+
+    <TextView
+        android:id="@+id/textViewCrearUmtpDedicacionEntorno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="36dp"
+        android:text="Dedicación entorno:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCrearUmtpVegetacion" />
+
+    <TextView
+        android:id="@+id/textViewCrearUmtpVegetacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="32dp"
+        android:text="Vegetación:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCrearUmtpGeoforma" />
+
+    <TextView
+        android:id="@+id/textViewCrearUmtpTipoRelieve"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="48dp"
+        android:text="Tipo Relieve:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCrearUmtpSector" />
+
+    <TextView
+        android:id="@+id/textViewCrearUmtpSector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="48dp"
+        android:text="Sector:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCrearUmtpVereda" />
+
+    <EditText
+        android:id="@+id/editTextCrearUmtpSector"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="20dp"
+        android:inputType="text"
+        app:layout_constraintStart_toEndOf="@+id/textViewCrearUmtpSector"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCrearUmtpVereda" />
+
+    <TextView
+        android:id="@+id/textViewCrearUmtpVereda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="44dp"
+        android:text="Vereda:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCrearUmtpMunicipio" />
+
+    <EditText
+        android:id="@+id/editTextCrearUmtpVereda"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:inputType="text"
+        app:layout_constraintStart_toEndOf="@+id/textViewCrearUmtpVereda"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCrearUmtpMunicipio" />
+
+    <EditText
+        android:id="@+id/editTextCrearUmtpDepartamento"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="24dp"
+        android:inputType="text"
+        app:layout_constraintStart_toEndOf="@+id/textViewCrearUmtpDepartamento"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCrearUmtpGradosLongitud" />
+
+    <TextView
+        android:id="@+id/textViewCrearUmtpDepartamento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="48dp"
+        android:text="Departamento:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCrearUmtpLongitud" />
+
+    <TextView
+        android:id="@+id/textViewCrearUmtpMunicipio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="48dp"
+        android:text="Municipio:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCrearUmtpDepartamento" />
+
+    <TextView
+        android:id="@+id/textViewCrearUmtpLongitud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="48dp"
+        android:text="Longitud:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCrearUmtpLatitud" />
+
+    <EditText
+        android:id="@+id/editTextCrearUmtpMunicipio"
+        android:layout_width="109dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:inputType="text"
+        app:layout_constraintStart_toEndOf="@+id/textViewCrearUmtpMunicipio"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCrearUmtpDepartamento" />
+
+    <EditText
+        android:id="@+id/editTextCrearUmtpGradosLongitud"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:hint="°"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/textViewCrearUmtpLongitud"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCrearUmtpGradosLatitud" />
+
+    <EditText
+        android:id="@+id/editTextCrearUmtpGradosLatitud"
+        android:layout_width="73dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="24dp"
+        android:hint="°"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/textViewCrearUmtpLatitud"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCrearUmtpUtmy" />
+
+    <EditText
+        android:id="@+id/editTextCrearUmtpMinutosLongitud"
+        android:layout_width="82dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="20dp"
+        android:hint="'"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/editTextCrearUmtpGradosLongitud"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCrearUmtpMinutosLatitud" />
+
+    <EditText
+        android:id="@+id/editTextCrearUmtpMinutosLatitud"
+        android:layout_width="82dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="24dp"
+        android:hint="'"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/editTextCrearUmtpGradosLatitud"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCrearUmtpUtmy" />
+
+    <EditText
+        android:id="@+id/editTextCrearUmtpSegundosLongitud"
+        android:layout_width="82dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="20dp"
+        android:hint='"'
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/editTextCrearUmtpMinutosLongitud"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCrearUmtpSegundosLatitud" />
+
+    <EditText
+        android:id="@+id/editTextCrearUmtpSegundosLatitud"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="24dp"
+        android:hint='"'
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/editTextCrearUmtpMinutosLatitud"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCrearUmtpUtmy" />
+
+    <TextView
+        android:id="@+id/textViewCrearUmtpUTMy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="48dp"
+        android:text="UTM y:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCrearUmtpUTMx" />
+
+    <TextView
+        android:id="@+id/textViewCrearUmtpLatitud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="52dp"
+        android:text="Latitud:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCrearUmtpUTMy" />
+
+    <TextView
+        android:id="@+id/textViewCrearUmtpTítulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="CrearUmtp"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewCrearUmtpLargo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="76dp"
+        android:text="Largo (m):"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextCrearUmtpLargo"
+        android:layout_width="179dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="76dp"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toEndOf="@+id/textViewCrearUmtpLargo"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextCrearUmtpAncho"
+        android:layout_width="201dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="16dp"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toEndOf="@+id/textViewCrearUmtpCodigoRotulo"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCrearUmtpLargo" />
+
+    <EditText
+        android:id="@+id/editTextCrearUmtpArea"
+        android:layout_width="198dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="20dp"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toEndOf="@+id/textViewCrearUmtpArea"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCrearUmtpAncho" />
+
+    <EditText
+        android:id="@+id/editTextCrearUmtpUtmx"
+        android:layout_width="132dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toEndOf="@+id/textViewCrearUmtpUTMx"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCrearUmtpAltura" />
+
+    <EditText
+        android:id="@+id/editTextCrearUmtpUtmy"
+        android:layout_width="133dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="20dp"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toEndOf="@+id/textViewCrearUmtpUTMy"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCrearUmtpUtmx" />
+
+    <TextView
+        android:id="@+id/textViewCrearUmtpCodigoRotulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="44dp"
+        android:text="Ancho (m):"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCrearUmtpLargo" />
+
+
+    <TextView
+        android:id="@+id/textViewCrearUmtpArea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="48dp"
+        android:text="Area (m2):"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCrearUmtpCodigoRotulo" />
+
+    <Spinner
+        android:id="@+id/spinnerCrearUmtpTipoRelieve"
+        android:layout_width="248dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="32dp"
+        android:focusableInTouchMode="true"
+        android:nextFocusDown="@id/editTextUbicacion"
+        android:prompt="@string/tipo_proyecto"
+        android:spinnerMode="dialog"
+        app:layout_constraintStart_toEndOf="@+id/textViewCrearUmtpTipoRelieve"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCrearUmtpSector" />
+
+    <Spinner
+        android:id="@+id/spinnerCrearUmtpVegetacion"
+        android:layout_width="228dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="28dp"
+        android:focusableInTouchMode="true"
+        android:nextFocusDown="@id/editTextUbicacion"
+        android:spinnerMode="dialog"
+        app:layout_constraintStart_toEndOf="@+id/textViewCrearUmtpVegetacion"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerCrearUmtpGeoforma" />
+
+    <Spinner
+        android:id="@+id/spinnerCrearUmtpDedicacionEntorno"
+        android:layout_width="278dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="28dp"
+        android:focusableInTouchMode="true"
+        android:spinnerMode="dialog"
+        app:layout_constraintStart_toEndOf="@+id/textViewCrearUmtpDedicacionEntorno"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerCrearUmtpVegetacion" />
+
+
+    <TextView
+        android:id="@+id/textViewCrearUmtpAltura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="44dp"
+        android:text="Altura (m s. n. m.):"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCrearUmtpArea" />
+
+    <EditText
+        android:id="@+id/editTextCrearUmtpAltura"
+        android:layout_width="82dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/textViewCrearUmtpAltura"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCrearUmtpArea" />
+
+    <TextView
+        android:id="@+id/textViewCrearUmtpUTMx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="48dp"
+        android:text="UTM x:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCrearUmtpAltura" />
+
+
+    <Button
+        android:id="@+id/buttonCrearUmtp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="324dp"
+        android:layout_marginLeft="324dp"
+        android:layout_marginTop="28dp"
+        android:text="Crear UMTP"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCrearUmtpZonaIncluyente" />
+
+    <TextView
+        android:id="@+id/textViewCrearUmtpMensajeNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""/>
+
+
+
+
+</android.support.constraint.ConstraintLayout>
+
+</ScrollView>

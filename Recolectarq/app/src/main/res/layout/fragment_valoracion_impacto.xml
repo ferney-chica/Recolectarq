@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+<android.support.constraint.ConstraintLayout
+    android:id="@+id/constraintLayoutValoracionImpacto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/textViewSituacionPatrimonialTitulo1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:text="VALORACIÓN ARQUEOLÓGICA"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewSituacionPatrimonialTitulo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="68dp"
+        android:text="VALORACIÓN PATRIMONIAL"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextValoracionImpactoHipotesis" />
+
+    <TextView
+        android:id="@+id/textViewSituacionPatrimonialTitulo3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="88dp"
+        android:text="IMPACTO"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextValoracionImpactoCautelas" />
+
+
+    <Button
+        android:id="@+id/buttonValoracionImpactoGuardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="312dp"
+        android:layout_marginLeft="312dp"
+        android:layout_marginTop="32dp"
+        android:text="Guardar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerValoracionImpactoImpacto" />
+
+    <TextView
+        android:id="@+id/textViewValoracionImpactoSintesis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="36dp"
+        android:text="Síntesis valoración evidencia:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSituacionPatrimonialTitulo1" />
+
+    <TextView
+        android:id="@+id/textViewValoracionImpactoHipotesis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="60dp"
+        android:text="Hipótesis:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewValoracionImpactoSintesis" />
+
+    <TextView
+        android:id="@+id/textViewValoracionImpactoValoracionBien"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="32dp"
+        android:text="Valoración del bien:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSituacionPatrimonialTitulo2" />
+
+    <TextView
+        android:id="@+id/textViewValoracionImpactoCautelas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="96dp"
+        android:text="Cautelas recomendadas:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewValoracionImpactoValoracionBien" />
+
+    <TextView
+        android:id="@+id/textViewValoracionImpactoReferenciaImpacto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="40dp"
+        android:text="Referencia de impacto:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSituacionPatrimonialTitulo3" />
+
+    <TextView
+        android:id="@+id/textViewValoracionImpactoTipoImpacto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="52dp"
+        android:text="Tipo de impacto:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewValoracionImpactoReferenciaImpacto" />
+
+    <TextView
+        android:id="@+id/textViewValoracionImpactoImpacto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="36dp"
+        android:text="Impacto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewValoracionImpactoTipoImpacto" />
+
+    <EditText
+        android:id="@+id/editTextValoracionImpactoSintesis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:gravity="top"
+        android:inputType="textImeMultiLine"
+        app:layout_constraintStart_toEndOf="@+id/textViewValoracionImpactoSintesis"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSituacionPatrimonialTitulo1" />
+
+    <EditText
+        android:id="@+id/editTextValoracionImpactoHipotesis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:gravity="top"
+        android:inputType="textImeMultiLine"
+        app:layout_constraintStart_toEndOf="@+id/textViewValoracionImpactoHipotesis"
+        app:layout_constraintTop_toBottomOf="@+id/editTextValoracionImpactoSintesis" />
+
+    <EditText
+        android:id="@+id/editTextValoracionImpactoValoracionBien"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:gravity="top"
+        android:inputType="textImeMultiLine"
+        app:layout_constraintStart_toEndOf="@+id/textViewValoracionImpactoValoracionBien"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSituacionPatrimonialTitulo2" />
+
+    <EditText
+        android:id="@+id/editTextValoracionImpactoCautelas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="68dp"
+        android:ems="10"
+        android:gravity="top"
+        android:inputType="textImeMultiLine"
+        app:layout_constraintStart_toEndOf="@+id/textViewValoracionImpactoCautelas"
+        app:layout_constraintTop_toBottomOf="@+id/editTextValoracionImpactoValoracionBien" />
+
+    <EditText
+        android:id="@+id/editTextValoracionImpactoReferenciaImpacto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:gravity="top"
+        android:inputType="textImeMultiLine"
+        app:layout_constraintStart_toEndOf="@+id/textViewValoracionImpactoReferenciaImpacto"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSituacionPatrimonialTitulo3" />
+
+    <Spinner
+        android:id="@+id/spinnerValoracionImpactoTipoImpacto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toEndOf="@+id/textViewValoracionImpactoTipoImpacto"
+        app:layout_constraintTop_toBottomOf="@+id/editTextValoracionImpactoReferenciaImpacto" />
+
+    <Spinner
+        android:id="@+id/spinnerValoracionImpactoImpacto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toEndOf="@+id/textViewValoracionImpactoImpacto"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerValoracionImpactoTipoImpacto" />
+
+</android.support.constraint.ConstraintLayout>
+
+    </ScrollView>

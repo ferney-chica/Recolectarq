@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayoutEditarPerfilExpuesto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    tools:layout_editor_absoluteY="81dp">
+
+
+    <TextView
+        android:id="@+id/textViewEditarPerfilExpuestoId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="16dp"
+        android:text="Perfil Expuesto Id: "
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewVerPerfilExpuestoUmtpId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="16dp"
+        android:text="UMTP id:"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/textViewEditarPerfilExpuestoId"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewEditarPerfilExpuestoCodigoRotulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="64dp"
+        android:text="Código Rótulo:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEditarPerfilExpuestoId" />
+
+    <TextView
+        android:id="@+id/textViewEditarPerfilExpuestoDescripcion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="84dp"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:text="Descripción:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEditarPerfilExpuestoCodigoRotulo" />
+
+    <TextView
+        android:id="@+id/textViewEditarPerfilExpuestoUsuarioCreador"
+        android:layout_width="wrap_content"
+        android:layout_height="21dp"
+        android:layout_marginStart="156dp"
+        android:layout_marginLeft="156dp"
+        android:layout_marginTop="68dp"
+        android:text="Usuario:"
+        app:layout_constraintStart_toEndOf="@+id/textViewEditarPerfilExpuestoCodigoRotulo"
+        app:layout_constraintTop_toBottomOf="@+id/textViewVerPerfilExpuestoUmtpId" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButtonEditarPerfilExpuesto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="380dp"
+        android:layout_marginLeft="380dp"
+        android:layout_marginTop="8dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.901"
+        app:srcCompat="@android:drawable/ic_menu_edit" />
+</android.support.constraint.ConstraintLayout>
+
+    </ScrollView
+        >

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayoutCrearMuestra"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:layout_editor_absoluteY="81dp">
+
+
+
+    <TextView
+        android:id="@+id/textViewCrearMuestraTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="CrearMuestra"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewCrearMuestraTipoMuestra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="76dp"
+        android:text="Tipo Muestra:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewCrearMuestraTipoMaterial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="28dp"
+        android:text="Tipo Material:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCrearMuestraTipoMuestra" />
+
+    <TextView
+        android:id="@+id/textViewCrearMuestraIdIntervencion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginLeft="84dp"
+        android:layout_marginTop="16dp"
+        android:text="Id Pozo/Recoleccion/Perfil:"
+        app:layout_constraintStart_toEndOf="@+id/textViewCrearMuestraTitulo"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewCrearMuestraArgumentacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="28dp"
+        android:text="Argumentación:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCrearMuestraTipoMaterial" />
+
+    <TextView
+        android:id="@+id/textViewCrearMuestraDestino"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="48dp"
+        android:text="Destino:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCrearMuestraArgumentacion" />
+
+    <TextView
+        android:id="@+id/textViewCrearMuestraContexto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="48dp"
+        android:text="Contexto:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCrearMuestraDestino" />
+
+    <Spinner
+        android:id="@+id/spinnerCrearMuestraTipoMuestra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="76dp"
+        app:layout_constraintStart_toEndOf="@+id/textViewCrearMuestraTipoMuestra"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinnerCrearMuestraTipoMaterial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toEndOf="@+id/textViewCrearMuestraTipoMaterial"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerCrearMuestraTipoMuestra" />
+
+    <EditText
+        android:id="@+id/editTextCrearMuestraArgumentacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="24dp"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        app:layout_constraintStart_toEndOf="@+id/textViewCrearMuestraArgumentacion"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerCrearMuestraTipoMaterial" />
+
+    <EditText
+        android:id="@+id/editTextCrearMuestraDestino"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="20dp"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        app:layout_constraintStart_toEndOf="@+id/textViewCrearMuestraDestino"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCrearMuestraArgumentacion" />
+
+    <EditText
+        android:id="@+id/editTextCrearMuestraContexto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="24dp"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        app:layout_constraintStart_toEndOf="@+id/textViewCrearMuestraContexto"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCrearMuestraDestino" />
+
+    <Button
+        android:id="@+id/buttonCrearMuestra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="332dp"
+        android:layout_marginLeft="332dp"
+        android:layout_marginTop="364dp"
+        android:text="Crear Muestra"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+</android.support.constraint.ConstraintLayout>
+    </ScrollView>

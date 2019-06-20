@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#E2E2E2"
+    tools:layout_editor_absoluteY="89dp">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/cardViewEstructuraArqueologica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+
+        android:layout_marginTop="8dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/constraintLayoutEstructuraArqueologica"
+            android:layout_width="wrap_content"
+            android:layout_height="178dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/imageViewEstructuraArqueologica"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/add_24dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.184" />
+
+
+            <ImageButton
+                android:id="@+id/imageButtonVerEstructuraArqueologica"
+                android:layout_width="37dp"
+                android:layout_height="39dp"
+                android:layout_marginStart="300dp"
+                android:layout_marginLeft="300dp"
+                android:layout_marginTop="140dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@android:drawable/ic_menu_edit" />
+
+            <ImageButton
+                android:id="@+id/imageButtonEliminarEstructuraArqueologica"
+                android:layout_width="37dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="140dp"
+                app:layout_constraintStart_toEndOf="@+id/imageButtonEstructuraArqueologicaImagenes"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@android:drawable/ic_delete" />
+
+            <ImageButton
+                android:id="@+id/imageButtonEstructuraArqueologicaImagenes"
+                android:layout_width="37dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="140dp"
+                app:layout_constraintStart_toEndOf="@+id/imageButtonEstructuraArqueologicaMateriales"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_menu_gallery" />
+
+            <ImageButton
+                android:id="@+id/imageButtonEstructuraArqueologicaMateriales"
+                android:layout_width="37dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="140dp"
+                app:layout_constraintStart_toEndOf="@+id/imageButtonVerEstructuraArqueologica"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@android:drawable/ic_dialog_dialer" />
+
+            <TextView
+                android:id="@+id/textViewEstructuraArqueologicaId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:text="Id Estructura:"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textViewEstructuraArqueologicaIdIntervencion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="36dp"
+                android:layout_marginLeft="36dp"
+                android:layout_marginTop="8dp"
+                android:text="Pozo_Perfil_recoleccionId"
+                app:layout_constraintStart_toEndOf="@+id/textViewEstructuraArqueologicaId"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textViewEstructuraArqueologicaTipoEstructura"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="48dp"
+                android:text="Tipo Estructura:"
+                app:layout_constraintStart_toEndOf="@+id/imageViewEstructuraArqueologica"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textViewEstructuraArqueologicaPuntoConexo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="8dp"
+                android:text="Punto Conexo:"
+                app:layout_constraintStart_toEndOf="@+id/imageViewEstructuraArqueologica"
+                app:layout_constraintTop_toBottomOf="@+id/textViewEstructuraArqueologicaTipoEstructura" />
+
+            <TextView
+                android:id="@+id/textViewEstructuraArqueologicaDescripcion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="12dp"
+                android:text="Descripción:"
+                app:layout_constraintStart_toEndOf="@+id/imageViewEstructuraArqueologica"
+                app:layout_constraintTop_toBottomOf="@+id/textViewEstructuraArqueologicaEntorno" />
+
+            <TextView
+                android:id="@+id/textViewEstructuraArqueologicaEntorno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="12dp"
+                android:text="Entorno:"
+                app:layout_constraintStart_toEndOf="@+id/imageViewEstructuraArqueologica"
+                app:layout_constraintTop_toBottomOf="@+id/textViewEstructuraArqueologicaPuntoConexo" />
+        </android.support.constraint.ConstraintLayout>
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>
+
+    </ScrollView>

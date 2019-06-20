@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayoutRecyclerMaterialesEstratoPerfil"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#E2E2E2"
+    tools:layout_editor_absoluteY="89dp">
+
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/cardViewMaterialesEstratoPerfil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/imageViewMaterialesEstratoPerfil"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/add_24dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.182" />
+
+                <TextView
+                    android:id="@+id/textViewMaterialesEstratoPerfilId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Estrato Perfil Id:"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toEndOf="@+id/textViewMaterialesEstratoPerfilMaterialId"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:layout_conversion_absoluteHeight="27dp"
+                    tools:layout_conversion_absoluteWidth="52dp" />
+
+
+                <TextView
+                    android:id="@+id/textViewMaterialesEstratoPerfilMaterialId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Material Id:"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:layout_conversion_absoluteHeight="27dp"
+                    tools:layout_conversion_absoluteWidth="52dp" />
+
+                <TextView
+                    android:id="@+id/textViewMaterialesEstratoPerfilTipoMaterial"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="44dp"
+                    android:layout_marginLeft="44dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Tipo de Material:"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toEndOf="@+id/imageViewMaterialesEstratoPerfil"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewMaterialesEstratoPerfilId"
+                    tools:layout_conversion_absoluteHeight="27dp"
+                    tools:layout_conversion_absoluteWidth="52dp" />
+
+
+                <TextView
+                    android:id="@+id/textViewMaterialesEstratoPerfilCantidad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="48dp"
+                    android:layout_marginLeft="48dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Cantidad:"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toEndOf="@+id/textViewMaterialesEstratoPerfilTipoMaterial"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewMaterialesEstratoPerfilId"
+                    tools:layout_conversion_absoluteHeight="27dp"
+                    tools:layout_conversion_absoluteWidth="52dp" />
+
+                <TextView
+                    android:id="@+id/textViewMaterialesEstratoPerfilElementoDiagnostico"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="44dp"
+                    android:layout_marginLeft="44dp"
+                    android:layout_marginTop="24dp"
+                    android:text="Elemento Diagnóstico:"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toEndOf="@+id/imageViewMaterialesEstratoPerfil"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewMaterialesEstratoPerfilTipoMaterial"
+                    tools:layout_conversion_absoluteHeight="27dp"
+                    tools:layout_conversion_absoluteWidth="52dp" />
+
+                <ImageButton
+                    android:id="@+id/imageButtonVerMaterialesEstratoPerfil"
+                    android:layout_width="35dp"
+                    android:layout_height="39dp"
+                    android:layout_marginStart="324dp"
+                    android:layout_marginLeft="324dp"
+                    android:layout_marginTop="136dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@android:drawable/ic_menu_edit" />
+
+                <ImageButton
+                    android:id="@+id/imageButtonEliminarMaterialesEstratoPerfil"
+                    android:layout_width="37dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="132dp"
+                    app:layout_constraintStart_toEndOf="@+id/imageButtonVerMaterialesEstratoPerfil"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@android:drawable/ic_delete" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

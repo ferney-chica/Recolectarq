@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+<android.support.constraint.ConstraintLayout
+    android:id="@+id/constraintLayoutSituacionPatrimonial"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/textViewSituacionPatrimonialTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="4dp"
+        android:text="SITUACIÓN PATRIMONIAL"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/buttonSituacionPatrimonialGuardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="368dp"
+        android:layout_marginLeft="368dp"
+        android:layout_marginTop="104dp"
+        android:text="Guardar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerSituacionPatrimonialModoProteccion" />
+
+    <TextView
+        android:id="@+id/textViewSituacionPatrimonialEstadoConservacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="48dp"
+        android:text="Estado Conservación:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSituacionPatrimonialTitulo" />
+
+    <TextView
+        android:id="@+id/textViewSituacionPatrimonialGradoAlteracion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="48dp"
+        android:text="Grado Alteración:"
+        app:layout_constraintStart_toEndOf="@+id/editTextSituacionPatrimonialEstado"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSituacionPatrimonialTitulo" />
+
+    <TextView
+        android:id="@+id/textViewSituacionPatrimonialCausasAlteracion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="56dp"
+        android:text="Causas Alteración:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSituacionPatrimonialEstadoConservacion" />
+
+    <TextView
+        android:id="@+id/textViewSituacionPatrimonialAgentesAlteracion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="56dp"
+        android:text="Agentes de Alteración:"
+        app:layout_constraintStart_toEndOf="@+id/spinnerSituacionPatrimonialCausasAlteracion"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSituacionPatrimonialGradoAlteracion" />
+
+    <TextView
+        android:id="@+id/textViewSituacionPatrimonialRegimenPropiedad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="32dp"
+        android:text="Régimen de Propiedad:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSituacionPatrimonialCausasAlteracion" />
+
+    <TextView
+        android:id="@+id/textViewSituacionPatrimonialGradoProteccion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="36dp"
+        android:text="Grado Protección Legal"
+        app:layout_constraintStart_toEndOf="@+id/spinnerSituacionPatrimonialRegimenPropiedad"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSituacionPatrimonialAgentesAlteracion" />
+
+    <TextView
+        android:id="@+id/textViewSituacionPatrimonialModoProteccion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="48dp"
+        android:text="Modo Protección Legal:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSituacionPatrimonialRegimenPropiedad" />
+
+    <TextView
+        android:id="@+id/textViewSituacionPatrimonialProteccionFisica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="44dp"
+        android:text="Protección Física:"
+        app:layout_constraintStart_toEndOf="@+id/spinnerSituacionPatrimonialModoProteccion"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSituacionPatrimonialGradoProteccion" />
+
+    <EditText
+        android:id="@+id/editTextSituacionPatrimonialEstado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="52dp"
+        android:ems="10"
+        android:gravity="top"
+        android:inputType="textImeMultiLine"
+        app:layout_constraintStart_toEndOf="@+id/textViewSituacionPatrimonialEstadoConservacion"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSituacionPatrimonialTitulo" />
+
+    <Spinner
+        android:id="@+id/spinnerSituacionPatrimonialGradoAlteracion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintStart_toEndOf="@+id/textViewSituacionPatrimonialGradoAlteracion"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSituacionPatrimonialTitulo" />
+
+    <Spinner
+        android:id="@+id/spinnerSituacionPatrimonialCausasAlteracion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintStart_toEndOf="@+id/textViewSituacionPatrimonialCausasAlteracion"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSituacionPatrimonialEstado" />
+
+    <Spinner
+        android:id="@+id/spinnerSituacionPatrimonialAgentesAlteracion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="44dp"
+        app:layout_constraintStart_toEndOf="@+id/textViewSituacionPatrimonialAgentesAlteracion"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerSituacionPatrimonialGradoAlteracion" />
+
+    <Spinner
+        android:id="@+id/spinnerSituacionPatrimonialRegimenPropiedad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toEndOf="@+id/textViewSituacionPatrimonialRegimenPropiedad"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerSituacionPatrimonialCausasAlteracion" />
+
+    <Spinner
+        android:id="@+id/spinnerSituacionPatrimonialGradoProteccion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toEndOf="@+id/textViewSituacionPatrimonialGradoProteccion"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerSituacionPatrimonialAgentesAlteracion" />
+
+    <Spinner
+        android:id="@+id/spinnerSituacionPatrimonialModoProteccion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="44dp"
+        app:layout_constraintStart_toEndOf="@+id/textViewSituacionPatrimonialModoProteccion"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerSituacionPatrimonialRegimenPropiedad" />
+
+    <Spinner
+        android:id="@+id/spinnerSituacionPatrimonialProteccionFisica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toEndOf="@+id/textViewSituacionPatrimonialProteccionFisica"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerSituacionPatrimonialGradoProteccion" />
+
+</android.support.constraint.ConstraintLayout>
+
+    </ScrollView>

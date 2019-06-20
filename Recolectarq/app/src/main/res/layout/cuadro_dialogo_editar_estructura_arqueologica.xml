@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    ><android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteY="81dp"
+
+    >
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayoutActualizarEstructura"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@android:color/background_light"
+        >
+
+        <TextView
+            android:id="@+id/textViewActualizarEstructuraIdIntervencion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="8dp"
+            android:text="Id Pozo/Recoleccion/Perfil:"
+            app:layout_constraintStart_toEndOf="@+id/textViewActualizarEstructuraId"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewActualizarEstructuraId"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Id Estructura:"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <Button
+            android:id="@+id/buttonActualizarEstructuraCancelar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="56dp"
+            android:text="Cancelar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextActualizarEstructuraEntorno" />"
+        android:text="Cancelar" />
+
+        <Button
+            android:id="@+id/buttonActualizarEstructura"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="56dp"
+            android:text="Actualizar"
+            app:layout_constraintStart_toEndOf="@+id/buttonActualizarEstructuraCancelar"
+            app:layout_constraintTop_toBottomOf="@+id/editTextActualizarEstructuraEntorno" />
+
+        <TextView
+            android:id="@+id/textViewActualizarEstructuraTipoEstructura"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="32dp"
+            android:text="Tipo Estructura:"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewActualizarEstructuraId" />
+
+        <TextView
+            android:id="@+id/textViewActualizarEstructuraTopologiaEstructura"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="28dp"
+            android:text="Topología Estructura:"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewActualizarEstructuraTipoEstructura" />
+
+        <TextView
+            android:id="@+id/textViewActualizarEstructuraDescripcion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="28dp"
+            android:text="Descripción:"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewActualizarEstructuraTopologiaEstructura" />
+
+        <TextView
+            android:id="@+id/textViewActualizarEstructuraPuntoConexo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="48dp"
+            android:text="Punto Conexo:"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewActualizarEstructuraDescripcion" />
+
+        <TextView
+            android:id="@+id/textViewActualizarEstructuraUtmx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="48dp"
+            android:text="UTMx:"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewActualizarEstructuraPuntoConexo" />
+
+        <TextView
+            android:id="@+id/textViewActualizarEstructuraUtmy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="56dp"
+            android:text="UTMy:"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewActualizarEstructuraUtmx" />
+
+        <TextView
+            android:id="@+id/textViewActualizarEstructuraLatitud"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="44dp"
+            android:text="Latitud:"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewActualizarEstructuraUtmy" />
+
+        <TextView
+            android:id="@+id/textViewActualizarEstructuraLongitud"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="56dp"
+            android:text="Longitud:"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewActualizarEstructuraLatitud" />
+
+        <TextView
+            android:id="@+id/textViewActualizarEstructuraDimension"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="48dp"
+            android:text="Dimensión:"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewActualizarEstructuraLongitud" />
+
+        <TextView
+            android:id="@+id/textViewActualizarEstructuraEntorno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="48dp"
+            android:text="Entorno:"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewActualizarEstructuraDimension" />
+
+        <Spinner
+            android:id="@+id/spinnerActualizarEstructuraTipoEstructura"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintStart_toEndOf="@+id/textViewActualizarEstructuraTipoEstructura"
+            app:layout_constraintTop_toBottomOf="@+id/textViewActualizarEstructuraIdIntervencion" />
+
+        <Spinner
+            android:id="@+id/spinnerActualizarEstructuraTopologiaEstructura"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintStart_toEndOf="@+id/textViewActualizarEstructuraTopologiaEstructura"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerActualizarEstructuraTipoEstructura" />
+
+        <EditText
+            android:id="@+id/editTextActualizarEstructuraDescripcion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            app:layout_constraintStart_toEndOf="@+id/textViewActualizarEstructuraDescripcion"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerActualizarEstructuraTopologiaEstructura" />
+
+        <EditText
+            android:id="@+id/editTextActualizarEstructuraPuntoConexo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            app:layout_constraintStart_toEndOf="@+id/textViewActualizarEstructuraPuntoConexo"
+            app:layout_constraintTop_toBottomOf="@+id/editTextActualizarEstructuraDescripcion" />
+
+        <EditText
+            android:id="@+id/editTextActualizarEstructuraUtmx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="24dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            app:layout_constraintStart_toEndOf="@+id/textViewActualizarEstructuraUtmx"
+            app:layout_constraintTop_toBottomOf="@+id/editTextActualizarEstructuraPuntoConexo" />
+
+        <EditText
+            android:id="@+id/editTextActualizarEstructuraUtmy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="24dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            app:layout_constraintStart_toEndOf="@+id/textViewActualizarEstructuraUtmy"
+            app:layout_constraintTop_toBottomOf="@+id/editTextActualizarEstructuraUtmx" />
+
+        <EditText
+            android:id="@+id/editTextActualizarEstructuraLatitud"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:inputType="text"
+            app:layout_constraintStart_toEndOf="@+id/textViewActualizarEstructuraLatitud"
+            app:layout_constraintTop_toBottomOf="@+id/editTextActualizarEstructuraUtmy" />
+
+        <EditText
+            android:id="@+id/editTextActualizarEstructuraLongitud"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="28dp"
+            android:ems="10"
+            android:inputType="text"
+            app:layout_constraintStart_toEndOf="@+id/textViewActualizarEstructuraLongitud"
+            app:layout_constraintTop_toBottomOf="@+id/editTextActualizarEstructuraLatitud" />
+
+        <EditText
+            android:id="@+id/editTextActualizarEstructuraDimension"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            app:layout_constraintStart_toEndOf="@+id/textViewActualizarEstructuraDimension"
+            app:layout_constraintTop_toBottomOf="@+id/editTextActualizarEstructuraLongitud" />
+
+        <EditText
+            android:id="@+id/editTextActualizarEstructuraEntorno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            app:layout_constraintStart_toEndOf="@+id/textViewActualizarEstructuraEntorno"
+            app:layout_constraintTop_toBottomOf="@+id/editTextActualizarEstructuraDimension" />
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>
+    </ScrollView >

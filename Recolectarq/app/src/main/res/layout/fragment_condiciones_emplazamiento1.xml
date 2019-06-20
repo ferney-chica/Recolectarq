@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayoutEmplazamiento1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/textViewCondiciones1Titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="4dp"
+        android:text="CONDICIONES DE EMPLAZAMIENTO"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewVinculacionElementos"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:text="VINCULACIÓN A ELEMENTOS NATURALES"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCondiciones1Titulo" />
+
+    <TextView
+        android:id="@+id/textViewViasNaturales"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="152dp"
+        android:text="VIAS NATURALES DE TRÁNSITO"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerElementosAfloramientos" />
+
+    <TextView
+        android:id="@+id/textViewElementosDecricpcion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="32dp"
+        android:text="Descripción:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewVinculacionElementos" />
+
+    <TextView
+        android:id="@+id/textViewHidrografia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="36dp"
+        android:text="Hidrografía:"
+        app:layout_constraintStart_toEndOf="@+id/editTextElementosDescripcion"
+        app:layout_constraintTop_toBottomOf="@+id/textViewVinculacionElementos" />
+
+    <TextView
+        android:id="@+id/textViewElementosAfloramientos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="56dp"
+        android:text="Afloramientos:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewElementosDecricpcion" />
+
+    <TextView
+        android:id="@+id/textViewElementosFisiografía"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="52dp"
+        android:text="Fisiografía:"
+        app:layout_constraintStart_toEndOf="@+id/spinnerElementosAfloramientos"
+        app:layout_constraintTop_toBottomOf="@+id/textViewHidrografia" />
+
+    <EditText
+        android:id="@+id/editTextElementosDescripcion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:gravity="top"
+        android:inputType="textImeMultiLine"
+        app:layout_constraintStart_toEndOf="@+id/textViewElementosDecricpcion"
+        app:layout_constraintTop_toBottomOf="@+id/textViewVinculacionElementos" />
+
+    <Spinner
+        android:id="@+id/spinnerElementosHidrografia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        app:layout_constraintStart_toEndOf="@+id/textViewHidrografia"
+        app:layout_constraintTop_toBottomOf="@+id/textViewVinculacionElementos" />
+
+    <Spinner
+        android:id="@+id/spinnerElementosAfloramientos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintStart_toEndOf="@+id/textViewElementosAfloramientos"
+        app:layout_constraintTop_toBottomOf="@+id/editTextElementosDescripcion" />
+
+    <Spinner
+        android:id="@+id/spinnerElementosFisiografia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="44dp"
+        app:layout_constraintStart_toEndOf="@+id/textViewElementosFisiografía"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerElementosHidrografia" />
+
+    <TextView
+        android:id="@+id/textViewViasDescripción"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="44dp"
+        android:text="Descripción:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewViasNaturales" />
+
+    <TextView
+        android:id="@+id/textViewViasTipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="60dp"
+        android:text="Tipo:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewViasDescripción" />
+
+    <TextView
+        android:id="@+id/textViewViasUso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="32dp"
+        android:text="Uso:"
+        app:layout_constraintStart_toEndOf="@+id/spinnerViasTipo"
+        app:layout_constraintTop_toBottomOf="@+id/editTextViasDescripcion" />
+
+    <EditText
+        android:id="@+id/editTextViasDescripcion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:gravity="top"
+        android:inputType="textImeMultiLine"
+        app:layout_constraintStart_toEndOf="@+id/textViewViasDescripción"
+        app:layout_constraintTop_toBottomOf="@+id/textViewViasNaturales" />
+
+    <Spinner
+        android:id="@+id/spinnerViasTipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toEndOf="@+id/textViewViasTipo"
+        app:layout_constraintTop_toBottomOf="@+id/editTextViasDescripcion" />
+
+    <Spinner
+        android:id="@+id/spinnerViasUso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toEndOf="@+id/textViewViasUso"
+        app:layout_constraintTop_toBottomOf="@+id/editTextViasDescripcion" />
+
+    <Button
+        android:id="@+id/buttonCondiciones1Guardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="228dp"
+        android:layout_marginLeft="228dp"
+        android:layout_marginTop="84dp"
+        android:text="Guardar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerViasUso" />
+
+</android.support.constraint.ConstraintLayout>
+
+    </ScrollView>

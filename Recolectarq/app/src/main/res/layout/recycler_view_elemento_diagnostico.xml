@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayoutElementoDiagnostico"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#E2E2E2"
+    tools:layout_editor_absoluteY="89dp">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/cardViewElementoDiagnostico"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/imageViewElementoDiagnostico"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="22dp"
+            android:layout_marginRight="22dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/add_24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/textViewEditarUmtpCodigoRotulo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.36" />
+
+
+        <TextView
+            android:id="@+id/textViewElementoDiagnosticoIntervencion"
+            android:layout_width="0dp"
+            android:layout_height="27dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="12dp"
+            android:text="Intervencion Id:"
+            android:textSize="20dp"
+            app:layout_constraintStart_toEndOf="@+id/imageViewElementoDiagnostico"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_conversion_absoluteHeight="27dp"
+            tools:layout_conversion_absoluteWidth="52dp" />
+
+
+        <TextView
+            android:id="@+id/textViewElementoDiagnosticoTipo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="8dp"
+            android:text="Tipo Material/Tipo Estructura:"
+            app:layout_constraintStart_toEndOf="@+id/imageViewElementoDiagnostico"
+            app:layout_constraintTop_toBottomOf="@+id/textViewElementoDiagnosticoIntervencion" />
+
+        <TextView
+            android:id="@+id/textViewElementoDiagnosticoCantidad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="8dp"
+            android:text="Cantidad:"
+            app:layout_constraintStart_toEndOf="@+id/textViewElementoDiagnosticoTipo"
+            app:layout_constraintTop_toBottomOf="@+id/textViewElementoDiagnosticoIntervencion" />
+
+        <TextView
+            android:id="@+id/textViewElementoDiagnosticoDescripcion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="12dp"
+            android:gravity="top"
+            android:text="Descripción:"
+            app:layout_constraintStart_toEndOf="@+id/imageViewElementoDiagnostico"
+            app:layout_constraintTop_toBottomOf="@+id/textViewElementoDiagnosticoTipo" />
+
+
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

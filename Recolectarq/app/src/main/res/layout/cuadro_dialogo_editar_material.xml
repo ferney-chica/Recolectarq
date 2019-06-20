@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteY="81dp">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constrainLayoutActualizarMaterial"
+        android:layout_width="700dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/background_light"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/textViewActualizarMaterialIdMaterial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="24dp"
+            android:text="Id Material:"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewActualizarMaterialIdNivel_IdRecoleccion_IdEstratoPerfil"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="56dp"
+            android:layout_marginLeft="56dp"
+            android:layout_marginTop="24dp"
+            android:text="Id Nivel/IdRecoleccion/IdEstratoPerfil:"
+            android:textSize="24sp"
+            app:layout_constraintStart_toEndOf="@+id/textViewActualizarMaterialIdMaterial"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewActualizarMaterialTipoMaterial"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="44dp"
+            android:text="Tipo Material:"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewActualizarMaterialIdMaterial" />
+
+        <Spinner
+            android:id="@+id/spinnerActualizarMaterialTipoMaterial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="44dp"
+            app:layout_constraintStart_toEndOf="@+id/textViewActualizarMaterialTipoMaterial"
+            app:layout_constraintTop_toBottomOf="@+id/textViewActualizarMaterialIdMaterial" />
+
+
+        <TextView
+            android:id="@+id/textViewActualizarMaterialCantidad"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="148dp"
+            android:layout_marginLeft="148dp"
+            android:layout_marginTop="48dp"
+            android:text="Cantidad:"
+            app:layout_constraintStart_toEndOf="@+id/spinnerActualizarMaterialTipoMaterial"
+            app:layout_constraintTop_toBottomOf="@+id/textViewActualizarMaterialIdNivel_IdRecoleccion_IdEstratoPerfil" />
+
+        <EditText
+            android:id="@+id/editTextActualizarMaterialCantidad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="48dp"
+            android:ems="10"
+            android:gravity="top"
+            android:inputType="number"
+            app:layout_constraintStart_toEndOf="@+id/textViewActualizarMaterialCantidad"
+            app:layout_constraintTop_toBottomOf="@+id/textViewActualizarMaterialIdNivel_IdRecoleccion_IdEstratoPerfil" />
+
+        <TextView
+            android:id="@+id/textViewActualizarMaterialObservacion"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="48dp"
+            android:text="Observación:"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewActualizarMaterialFlanco" />
+
+
+        <EditText
+            android:id="@+id/editTextActualizarMaterialObservacion"
+            android:layout_width="wrap_content"
+            android:layout_height="47dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="40dp"
+            android:ems="10"
+            android:gravity="top"
+            android:inputType="text|textMultiLine"
+            app:layout_constraintStart_toEndOf="@+id/textViewActualizarMaterialObservacion"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerActualizarMaterialFlanco" />
+
+        <TextView
+            android:id="@+id/textViewActualizarMaterialElemento"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="56dp"
+            android:text="Elemento Diagnóstico:"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewActualizarMaterialObservacion" />
+
+        <Spinner
+            android:id="@+id/spinnerActualizarMaterialElemento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="28dp"
+            app:layout_constraintStart_toEndOf="@+id/textViewActualizarMaterialElemento"
+            app:layout_constraintTop_toBottomOf="@+id/editTextActualizarMaterialObservacion" />
+
+        <TextView
+            android:id="@+id/textViewActualizarMaterialObservacionElemento"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginTop="52dp"
+            android:text="Observación Elemento:"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewActualizarMaterialElemento" />
+
+        <EditText
+            android:id="@+id/editTextActualizarMaterialObservacionElemento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="44dp"
+            android:ems="10"
+            android:gravity="top"
+            android:inputType="text|textMultiLine"
+            app:layout_constraintStart_toEndOf="@+id/textViewActualizarMaterialObservacionElemento"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerActualizarMaterialElemento" />
+
+
+        <Button
+            android:id="@+id/buttonCancelarActualizarMaterial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="196dp"
+            android:layout_marginLeft="196dp"
+            android:layout_marginTop="40dp"
+            android:text="Cancelar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextActualizarMaterialObservacionElemento" />
+
+        <Button
+            android:id="@+id/buttonActualizarMaterial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="44dp"
+            android:layout_marginLeft="44dp"
+            android:layout_marginTop="40dp"
+            android:text="Actualizar"
+            app:layout_constraintStart_toEndOf="@+id/buttonCancelarActualizarMaterial"
+            app:layout_constraintTop_toBottomOf="@+id/editTextActualizarMaterialObservacionElemento" />
+
+        <TextView
+            android:id="@+id/textViewActualizarMaterialFlanco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="44dp"
+            android:text="Flanco Geográfico:"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewActualizarMaterialTipoMaterial" />
+
+        <Spinner
+            android:id="@+id/spinnerActualizarMaterialFlanco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="40dp"
+            app:layout_constraintStart_toEndOf="@+id/textViewActualizarMaterialFlanco"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerActualizarMaterialTipoMaterial" />
+
+        <TextView
+            android:id="@+id/textViewActualizarMaterialCodigoRotulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="96dp"
+            android:layout_marginLeft="96dp"
+            android:layout_marginTop="40dp"
+            android:text="Código Rótulo:"
+            app:layout_constraintStart_toEndOf="@+id/spinnerActualizarMaterialFlanco"
+            app:layout_constraintTop_toBottomOf="@+id/textViewActualizarMaterialCantidad" />
+
+        <EditText
+            android:id="@+id/editTextActualizarMaterialCodigoRotulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:inputType="text"
+            app:layout_constraintStart_toEndOf="@+id/textViewActualizarMaterialCodigoRotulo"
+            app:layout_constraintTop_toBottomOf="@+id/editTextActualizarMaterialCantidad" />
+
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>
+
+    </ScrollView
+        >

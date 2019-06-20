@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/constraintLayoutVerUmtp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        tools:layout_editor_absoluteY="89dp">
+
+        <TextView
+            android:id="@+id/textViewVerUmtpTítulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:text="VerUmtp"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewVerUmtpGeoforma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:text="Geoforma:"
+            app:layout_constraintStart_toEndOf="@+id/textViewVerUmtpTipoRelieve"
+            app:layout_constraintTop_toBottomOf="@+id/textViewVerUmtpSector" />
+
+        <TextView
+            android:id="@+id/textViewVerUmtpZonasIncluyentes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:layout_marginLeft="44dp"
+            android:layout_marginTop="20dp"
+            android:text="Zonas incluyentes:"
+            app:layout_constraintStart_toEndOf="@+id/textViewVerUmtpAccesos"
+            app:layout_constraintTop_toBottomOf="@+id/textViewVerUmtpDedicacionEntorno" />
+
+        <TextView
+            android:id="@+id/textViewVerUmtpNumero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="20dp"
+            android:text="Número:"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewVerUmtpAccesos" />
+
+        <TextView
+            android:id="@+id/textViewVerUmtpCodigoRotulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="24dp"
+            android:text="Código Rotulo:"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewVerUmtpNumero" />
+
+        <TextView
+            android:id="@+id/textViewVerUmtpAccesos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="20dp"
+            android:text="Accesos:"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewVerUmtpVegetacion" />
+
+        <TextView
+            android:id="@+id/textViewVerUmtpDedicacionEntorno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="44dp"
+            android:layout_marginLeft="44dp"
+            android:layout_marginTop="20dp"
+            android:text="Dedicación entorno:"
+            app:layout_constraintStart_toEndOf="@+id/textViewVerUmtpVegetacion"
+            app:layout_constraintTop_toBottomOf="@+id/textViewVerUmtpGeoforma" />
+
+        <TextView
+            android:id="@+id/textViewVerUmtpVegetacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="20dp"
+            android:text="Vegetación:"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewVerUmtpTipoRelieve" />
+
+        <TextView
+            android:id="@+id/textViewVerUmtpTipoRelieve"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="20dp"
+            android:text="Tipo Relieve:"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewVerUmtpVereda" />
+
+        <TextView
+            android:id="@+id/textViewVerUmtpSector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="44dp"
+            android:layout_marginLeft="44dp"
+            android:layout_marginTop="20dp"
+            android:text="Sector:"
+            app:layout_constraintStart_toEndOf="@+id/textViewVerUmtpVereda"
+            app:layout_constraintTop_toBottomOf="@+id/textViewVerUmtpMunicipio" />
+
+        <TextView
+            android:id="@+id/textViewVerUmtpVereda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="20dp"
+            android:text="Vereda:"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewVerUmtpDepartamento" />
+
+        <TextView
+            android:id="@+id/textViewVerUmtpDepartamento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="20dp"
+            android:text="Departamento:"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewVerUmtpLatitud" />
+
+        <TextView
+            android:id="@+id/textViewVerUmtpMunicipio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:layout_marginLeft="48dp"
+            android:layout_marginTop="20dp"
+            android:text="Municipio:"
+            app:layout_constraintStart_toEndOf="@+id/textViewVerUmtpDepartamento"
+            app:layout_constraintTop_toBottomOf="@+id/textViewVerUmtpLongitud" />
+
+        <TextView
+            android:id="@+id/textViewVerUmtpLongitud"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="44dp"
+            android:layout_marginLeft="44dp"
+            android:layout_marginTop="20dp"
+            android:text="Longitud:"
+            app:layout_constraintStart_toEndOf="@+id/textViewVerUmtpLatitud"
+            app:layout_constraintTop_toBottomOf="@+id/textViewVerUmtpUTMx" />
+
+        <TextView
+            android:id="@+id/textViewVerUmtpUTMy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="20dp"
+            android:text="UTM y:"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewVerUmtpArea" />
+
+        <TextView
+            android:id="@+id/textViewVerUmtpLatitud"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="20dp"
+            android:text="Latitud:"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewVerUmtpUTMy" />
+
+        <TextView
+            android:id="@+id/textViewVerUmtpLargo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="88dp"
+            android:text="Largo (m):"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewVerUmtpAncho"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="52dp"
+            android:layout_marginLeft="52dp"
+            android:layout_marginTop="88dp"
+            android:text="Ancho (m):"
+            app:layout_constraintStart_toEndOf="@+id/textViewVerUmtpLargo"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/textViewVerUmtpArea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="24dp"
+            android:text="Area (m2):"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewVerUmtpLargo" />
+
+
+        <TextView
+            android:id="@+id/textViewVerUmtpAltura"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="44dp"
+            android:layout_marginLeft="44dp"
+            android:layout_marginTop="24dp"
+            android:nextFocusDown="@id/spinnerTipo"
+            android:text="Altura (m s. n. m.):"
+            app:layout_constraintStart_toEndOf="@+id/textViewVerUmtpArea"
+            app:layout_constraintTop_toBottomOf="@+id/textViewVerUmtpAncho" />
+
+        <TextView
+            android:id="@+id/textViewVerUmtpUTMx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="44dp"
+            android:layout_marginLeft="44dp"
+            android:layout_marginTop="20dp"
+            android:text="UTM x:"
+            app:layout_constraintStart_toEndOf="@+id/textViewVerUmtpUTMy"
+            app:layout_constraintTop_toBottomOf="@+id/textViewVerUmtpAltura" />
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabBotonVerUmtpIntervenciones"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="508dp"
+            android:layout_marginLeft="508dp"
+            android:layout_marginBottom="8dp"
+            android:foregroundGravity="bottom|center"
+            android:src="@drawable/ic_menu_manage"
+            app:layout_constraintBottom_toTopOf="@+id/fabBotonVerUmtpImagenes"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabBotonVerUmtpEditar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="508dp"
+            android:layout_marginLeft="508dp"
+            android:layout_marginBottom="8dp"
+            android:foregroundGravity="bottom|center"
+            android:src="@android:drawable/ic_menu_edit"
+            app:layout_constraintBottom_toTopOf="@+id/fabBotonVerUmtpIntervenciones"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewVerUmtpIdUmtp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="140dp"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="16dp"
+            android:text="Id UMTP: "
+            app:layout_constraintStart_toEndOf="@+id/textViewVerUmtpTítulo"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabBotonVerUmtpImagenes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="508dp"
+            android:layout_marginLeft="508dp"
+            android:layout_marginBottom="8dp"
+            android:clickable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/ic_menu_gallery" />
+
+
+        <ImageButton
+            android:id="@+id/imageButtonVerUmtpEscanearCodigo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toEndOf="@+id/textViewVerUmtpCodigoRotulo"
+            app:layout_constraintTop_toBottomOf="@+id/textViewVerUmtpNumero"
+            app:srcCompat="?android:attr/actionModeSelectAllDrawable" />
+
+
+
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>

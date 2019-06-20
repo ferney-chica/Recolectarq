@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="#E2E2E2"
+    tools:layout_editor_absoluteY="81dp">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/cardViewUsuarios"
+        android:layout_width="418dp"
+        android:layout_height="200dp"
+        android:clickable="true"
+        android:focusable="true"
+
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/imageViewUmtp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/add_24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="200dp"
+            android:layout_height="27dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="30dp"
+            android:text="NombreUsuario"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_conversion_absoluteHeight="27dp"
+            tools:layout_conversion_absoluteWidth="52dp" />
+
+
+        <ImageButton
+            android:id="@+id/imageButtonEliminarUsuario"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageButtonEditarUmtp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.175"
+            app:srcCompat="@android:drawable/ic_delete" />
+
+        <ImageButton
+            android:id="@+id/imageButtonEditarUmtp"
+            android:layout_width="37dp"
+            android:layout_height="39dp"
+            android:layout_marginEnd="52dp"
+            android:layout_marginRight="52dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.186"
+            app:srcCompat="@android:drawable/ic_menu_edit" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

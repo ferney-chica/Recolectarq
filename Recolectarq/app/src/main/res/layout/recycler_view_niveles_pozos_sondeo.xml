@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#E2E2E2"
+    tools:layout_editor_absoluteY="89dp">
+
+
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/imageViewNivelesPozo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/add_24dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.184" />
+
+    <TextView
+        android:id="@+id/textViewNivelId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Id Nivel:"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_conversion_absoluteHeight="27dp"
+        tools:layout_conversion_absoluteWidth="52dp" />
+
+    <TextView
+        android:id="@+id/textViewNivelIdPozo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="8dp"
+        android:text="Id Pozo:"
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@+id/textViewNivelId"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_conversion_absoluteHeight="27dp"
+        tools:layout_conversion_absoluteWidth="52dp" />
+
+    <TextView
+        android:id="@+id/textViewNivelNumero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="12dp"
+        android:text="Número:"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/imageViewNivelesPozo"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNivelIdPozo"
+        tools:layout_conversion_absoluteHeight="27dp"
+        tools:layout_conversion_absoluteWidth="52dp" />
+
+    <TextView
+        android:id="@+id/textViewNivelCodigoRotuloPozo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="12dp"
+        android:text="Código Rótulo:"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/imageViewNivelesPozo"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNivelProfucndidad" />
+
+    <TextView
+        android:id="@+id/textViewNivelProfucndidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="12dp"
+        android:text="Profundidad:"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/imageViewNivelesPozo"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNivelNumero"
+        tools:layout_conversion_absoluteHeight="27dp"
+        tools:layout_conversion_absoluteWidth="52dp" />
+
+            <ImageButton
+                android:id="@+id/imageButtonNivelVer"
+                android:layout_width="37dp"
+                android:layout_height="39dp"
+                android:layout_marginStart="296dp"
+                android:layout_marginLeft="296dp"
+                android:layout_marginTop="88dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@android:drawable/ic_menu_edit" />
+
+    <ImageButton
+        android:id="@+id/imageButtonNivelMateriales"
+        android:layout_width="37dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="88dp"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonNivelVer"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_dialog_dialer" />
+
+    <ImageButton
+        android:id="@+id/imageButtonNivelImagenes"
+        android:layout_width="37dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="88dp"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonNivelCodigoRotulo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_menu_camera" />
+
+    <ImageButton
+        android:id="@+id/imageButtonNivelCodigoRotulo"
+        android:layout_width="37dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="88dp"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonNivelMateriales"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="?attr/actionModeSelectAllDrawable" />
+
+
+
+
+</android.support.constraint.ConstraintLayout>

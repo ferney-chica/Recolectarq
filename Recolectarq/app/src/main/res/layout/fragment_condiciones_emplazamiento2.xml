@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+<android.support.constraint.ConstraintLayout
+    android:id="@+id/constraintLayoutEmplazamiento2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/textViewCondiciones2Titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="4dp"
+        android:text="CONDICIONES DE EMPLAZAMIENTO"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewVinculacionAmbitoVisibilidad"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="28dp"
+        android:text="ÁMBITO DE VISIBILIDAD"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCondiciones2Titulo" />
+
+    <TextView
+        android:id="@+id/textViewCondicionEdafologicas"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="68dp"
+        android:text="CONDICIONES EDAFOLÓGICAS"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewVisibilidadCircular" />
+
+    <TextView
+        android:id="@+id/textViewCondicionEntornoArqueologico"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="64dp"
+        android:text="ENTORNO ARQUEOLÓGICO"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCondicionesEdafologicas" />
+
+    <TextView
+        android:id="@+id/textViewVisibilidadDescricpcion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="20dp"
+        android:text="Descripción:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewVinculacionAmbitoVisibilidad" />
+
+    <TextView
+        android:id="@+id/textViewVisibilidadPuntual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginLeft="72dp"
+        android:layout_marginTop="20dp"
+        android:text="Puntual:"
+        app:layout_constraintStart_toEndOf="@+id/editTextVisibilidadDescripcion"
+        app:layout_constraintTop_toBottomOf="@+id/textViewVinculacionAmbitoVisibilidad" />
+
+    <TextView
+        android:id="@+id/textViewVisibilidadLineal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="52dp"
+        android:text="Lineal:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewVisibilidadDescricpcion" />
+
+    <TextView
+        android:id="@+id/textViewVisibilidadAbanico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="272dp"
+        android:layout_marginLeft="272dp"
+        android:layout_marginTop="56dp"
+        android:text="Abanico:"
+        app:layout_constraintStart_toEndOf="@+id/spinnerVisibilidadLineal"
+        app:layout_constraintTop_toBottomOf="@+id/textViewVisibilidadPuntual" />
+
+    <TextView
+        android:id="@+id/textViewVisibilidadCircular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="48dp"
+        android:text="Circular:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewVisibilidadLineal" />
+
+    <EditText
+        android:id="@+id/editTextVisibilidadDescripcion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:gravity="top"
+        android:inputType="textImeMultiLine"
+        app:layout_constraintStart_toEndOf="@+id/textViewVisibilidadDescricpcion"
+        app:layout_constraintTop_toBottomOf="@+id/textViewVinculacionAmbitoVisibilidad" />
+
+    <Spinner
+        android:id="@+id/spinnerVisibilidadPuntual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toEndOf="@+id/textViewVisibilidadPuntual"
+        app:layout_constraintTop_toBottomOf="@+id/textViewVinculacionAmbitoVisibilidad" />
+
+    <Spinner
+        android:id="@+id/spinnerVisibilidadLineal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toEndOf="@+id/textViewVisibilidadLineal"
+        app:layout_constraintTop_toBottomOf="@+id/editTextVisibilidadDescripcion" />
+
+    <Spinner
+        android:id="@+id/spinnerVisibilidadAbanico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintStart_toEndOf="@+id/textViewVisibilidadAbanico"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerVisibilidadPuntual" />
+
+    <Spinner
+        android:id="@+id/spinnerVisibilidadCircular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toEndOf="@+id/textViewVisibilidadCircular"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerVisibilidadLineal" />
+
+    <EditText
+        android:id="@+id/editTextCondicionesEdafologicas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textImeMultiLine"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCondicionEdafologicas" />
+
+    <EditText
+        android:id="@+id/editTextEntornoArqueologico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="textImeMultiLine"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCondicionEntornoArqueologico" />
+
+    <Button
+        android:id="@+id/buttonCondiciones2Guardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="356dp"
+        android:layout_marginLeft="356dp"
+        android:layout_marginTop="40dp"
+        android:text="Guardar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEntornoArqueologico" />
+
+</android.support.constraint.ConstraintLayout>
+
+    </ScrollView>

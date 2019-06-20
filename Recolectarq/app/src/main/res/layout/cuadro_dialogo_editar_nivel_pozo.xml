@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteY="81dp">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constrainLayoutActualizarNivelPozo"
+        android:layout_width="600dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@android:color/background_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <TextView
+            android:id="@+id/textViewActualizarNivelIdNivel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Id Nivel Pozo:"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewActualizarNivelIdPozo"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="52dp"
+            android:layout_marginLeft="52dp"
+            android:layout_marginTop="16dp"
+            android:text="Id Pozo:"
+            android:textSize="24sp"
+            app:layout_constraintStart_toEndOf="@+id/textViewActualizarNivelIdNivel"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewActualizarNivelNumero"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="40dp"
+
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="44dp"
+            android:text="Número:"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewActualizarNivelIdNivel" />
+
+        <EditText
+            android:id="@+id/editTextActualizarNivelNumero"
+            android:layout_width="wrap_content"
+            android:layout_height="47dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginLeft="44dp"
+            android:layout_marginTop="44dp"
+            android:ems="10"
+            android:gravity="top"
+            android:inputType="number"
+            app:layout_constraintStart_toEndOf="@+id/textViewActualizarNivelNumero"
+            app:layout_constraintTop_toBottomOf="@+id/textViewActualizarNivelIdPozo" />
+
+
+        <TextView
+            android:id="@+id/textViewActualizarNivelProfundidad"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="64dp"
+            android:text="Profundidad:"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewActualizarNivelNumero" />
+
+        <EditText
+            android:id="@+id/editTextActualizarNivelProfundidad"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="36dp"
+            android:ems="10"
+            android:gravity="top"
+            android:inputType="number"
+            app:layout_constraintStart_toEndOf="@+id/textViewActualizarNivelProfundidad"
+            app:layout_constraintTop_toBottomOf="@+id/editTextActualizarNivelNumero" />
+
+        <TextView
+            android:id="@+id/textViewActualizarNivelCodigoRotulo"
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="56dp"
+            android:text="Código Rótulo:"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewActualizarNivelProfundidad" />
+
+
+        <EditText
+            android:id="@+id/editTextActualizarNivelCodigoRotulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="24dp"
+            android:ems="10"
+            android:gravity="top"
+            android:inputType="text"
+            app:layout_constraintStart_toEndOf="@+id/textViewActualizarNivelCodigoRotulo"
+            app:layout_constraintTop_toBottomOf="@+id/editTextActualizarNivelProfundidad" />
+
+
+        <Button
+            android:id="@+id/buttonCancelarActualizarNivelPozo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="128dp"
+            android:layout_marginLeft="128dp"
+            android:layout_marginTop="32dp"
+            android:text="Cancelar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextActualizarNivelCodigoRotulo" />
+
+        <Button
+            android:id="@+id/buttonActualizarNivelPozo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="32dp"
+            android:text="Actualizar"
+            app:layout_constraintStart_toEndOf="@+id/buttonCancelarActualizarNivelPozo"
+            app:layout_constraintTop_toBottomOf="@+id/editTextActualizarNivelCodigoRotulo" />
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>
+
+    </ScrollView
+        >

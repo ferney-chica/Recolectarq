@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/textViewEditarUmtpTítulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="CrearProyecto"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewEditarUmtpLargo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="28dp"
+        android:text="Nombre:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEditarUmtpTítulo" />
+
+    <EditText
+        android:id="@+id/editTextEditarUmtpLargo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintStart_toEndOf="@+id/textViewEditarUmtpLargo"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEditarUmtpTítulo" />
+
+    <TextView
+        android:id="@+id/textViewEditarUmtpCodigoRotulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        android:text="Tipo:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEditarUmtpLargo" />
+
+
+    <Spinner
+        android:id="@+id/spinnerTipo"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:focusableInTouchMode="true"
+        android:nextFocusDown="@id/editTextUbicacion"
+        android:prompt="@string/tipo_proyecto"
+        android:spinnerMode="dialog"
+        app:layout_constraintStart_toEndOf="@+id/textViewEditarUmtpCodigoRotulo"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEditarUmtpLargo" />
+
+
+    <TextView
+        android:id="@+id/textViewEditarUmtpTipoRelieve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:text="Ubicación:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerTipo" />
+
+    <EditText
+        android:id="@+id/editTextUbicacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        app:layout_constraintStart_toEndOf="@+id/textViewEditarUmtpTipoRelieve"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerTipo" />
+
+
+    <TextView
+        android:id="@+id/textViewEditarUmtpAltura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:nextFocusDown="@id/spinnerTipo"
+        android:text="Referencias administrativas:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextUbicacion" />
+
+    <EditText
+        android:id="@+id/editTextEditarUmtpAltura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        app:layout_constraintStart_toEndOf="@+id/textViewEditarUmtpAltura"
+        app:layout_constraintTop_toBottomOf="@+id/editTextUbicacion" />
+
+    <TextView
+        android:id="@+id/textViewEditarUmtpUTMx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:text="Aval científico:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEditarUmtpAltura" />
+
+    <EditText
+        android:id="@+id/editTextAval"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        app:layout_constraintStart_toEndOf="@+id/textViewEditarUmtpUTMx"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEditarUmtpAltura" />
+
+
+    <Button
+        android:id="@+id/buttonCrearProyecto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Crear Proyecto"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAval"
+        tools:layout_editor_absoluteX="121dp" />
+
+    <TextView
+        android:id="@+id/textViewMensajeNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        tools:layout_editor_absoluteX="70dp"
+        tools:layout_editor_absoluteY="101dp" />
+
+
+</android.support.constraint.ConstraintLayout>
+
+    </ScrollView
+        >
